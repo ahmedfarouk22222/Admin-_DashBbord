@@ -1,16 +1,17 @@
-
+import 'package:build_reall_responsive_and_adaptive/view/dash_board_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const RealResponsiveandAdaptive());
-  
+  runApp(const Dashboard());
 }
-class RealResponsiveandAdaptive extends StatelessWidget {
-  const RealResponsiveandAdaptive({super.key});
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home:DashBoardView(),
+    );
   }
 }
-
